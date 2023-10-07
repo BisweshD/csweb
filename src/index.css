@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* General styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f4f4f4;
+    font-family: 'Amoretta', serif; /* Updated to a suggested font */
+  }
+  
+  /* Header styles */
+  .title {
+    text-align: center;
+    font-size: 3em;
+    margin: 20px 0;
+    color: #333; /* Dark text */
+  }
+  
+  /* Menu styles */
+  .menu {
+    display: flex;
+    justify-content: center;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: 'Futura', sans-serif; /* Futuristic font */
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .menu li.active {
+    background-color: #fff; /* White background for active */
+    color: #000; /* Black text for active */
+  }
+  
+  /* News Grid styles */
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3-column grid */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* News Item styles */
+  .article {
+    background-color: #fff;
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+  
+  .article-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .article-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .article-title, .article-source, .article-description {
+    padding: 10px;
+  }
+  
+  .article-title {
+    font-size: 24px;
+    color: #000; /* Black text */
+    text-decoration: none; /* No underline */
+  }
+  
+  .article-description {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .section-header {
+    font-size: 2em;
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 4px solid #333;
+  }
+  
