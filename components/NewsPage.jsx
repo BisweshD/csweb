@@ -8,7 +8,7 @@ function NewsPage() {
   useEffect(() => {
     // Fetch the news article by ID or URL here
     // For demonstration, I'm using a mock API call
-    fetch(`https://newsapi.org/v2/everything?q=${id}&apiKey=021baff830cb4c8fa2c688eefdd78b46`)
+    fetch(`https://newsapi.org/v2/everything?q=${id}&apiKey=d209a9b8208c49aa8fe908d91d95c5f2`)
       .then((response) => response.json())
       .then((data) => {
         if (data.articles && data.articles.length > 0) {

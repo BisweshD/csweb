@@ -8,9 +8,14 @@ function App() {
   const [category, setCategory] = useState("general")
 
   useEffect(() => {
-    fetch(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=021baff830cb4c8fa2c688eefdd78b46`)
+    const GNEWS_API_ENDPOINT = 'https://gnews.io/api/v4/top-headlines';
+    const GNEWS_API_KEY = 'aa67008ce8a8b6cefa9a9b731a376b66'; // Your GNews API Key
+
+    // Adjusting the request URL for GNews
+    fetch(`${GNEWS_API_ENDPOINT}?country=us&topic=${category}&token=${GNEWS_API_KEY}`)
     .then(res => res.json())
     .then(data => setItems(data.articles))
+    .catch(error => console.error('Error:', error));
   }, [category])
 
   return (
