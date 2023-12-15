@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/csweb/static/css/main.84d44781.css",
+    "main.js": "/csweb/static/js/main.1d198d4f.js",
+    "static/js/787.3e1aff49.chunk.js": "/csweb/static/js/787.3e1aff49.chunk.js",
+    "static/media/CSInformed.png": "/csweb/static/media/CSInformed.2c06564a79e5d710cd7c.png",
+    "index.html": "/csweb/index.html",
+    "main.84d44781.css.map": "/csweb/static/css/main.84d44781.css.map",
+    "main.1d198d4f.js.map": "/csweb/static/js/main.1d198d4f.js.map",
+    "787.3e1aff49.chunk.js.map": "/csweb/static/js/787.3e1aff49.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84d44781.css",
+    "static/js/main.1d198d4f.js"
+  ]
+}
