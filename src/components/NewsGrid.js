@@ -1,15 +1,12 @@
-import NewsItem from './NewsItem'
+import NewsItem from './NewsItem';
 
-function NewsGrid({items}) {
+function NewsGrid({ items = [] }) {
   return (
     <div className="news-grid">
-      
-      {items.map((item, i) => (
-        <NewsItem key={i} item={item}/>
-      ))}
+
+      {Array.isArray(items) ? items.map((item, i) => <NewsItem key={i} item={item} />) : null}
     </div>
-  )
+  );
 }
 
-
-export default NewsGrid
+export default NewsGrid;

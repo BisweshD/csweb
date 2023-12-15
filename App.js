@@ -14,19 +14,20 @@ function App() {
   useEffect(() => {
     let query;
     if (category === "AI") {
-      query = "(artificial intelligence OR AI OR machine learning OR deep learning)";
-    } else if (category === "Quantum Computing") {
-      query = "(quantum computing OR quantum algorithms OR quantum mechanics)";
+      query = "artificial intelligence OR AI";
+    } else if (category === "QuantumLeap") {
+      query = "quantum computing OR quantum leap";
     } else if (category === "TechSpotlight") {
-      query = "(technology spotlight OR tech spotlight OR tech trends)";
-    } else if (category === "FutureTech") {
-      query = "(future technology OR future tech OR emerging technology)";
+      query = "technology spotlight OR tech spotlight";
+    } else if (category === "InnovativeCareers") {
+      query = "innovative careers OR tech jobs OR tech internships";
     }
-  
-    fetch(`https://newsapi.org/v2/everything?q=${query}&sortBy=popularity&sortBy=publishedAt&language=en&apiKey=021baff830cb4c8fa2c688eefdd78b46`)
-    .then(res => res.json())
-    .then(data => setItems(data.articles));
-}, [category]);
+
+    fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=021baff830cb4c8fa2c688eefdd78b46`)
+      .then(res => res.json())
+      .then(data => setItems(data.articles));
+  }, [category]);
+
   return (
     <div className="App">
       <header className="app-header">

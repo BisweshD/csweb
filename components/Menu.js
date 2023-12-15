@@ -1,9 +1,9 @@
 function Menu({active, setActive, setCategory}) {
   const links = [
     { id: 1, name: "AI", value: "AI" },
-    { id: 2, name: "Quantum Computing", value: "Quantum Computing" },
+    { id: 2, name: "Quantum Leap", value: "QuantumLeap" },
     { id: 3, name: "Tech Spotlight", value: "TechSpotlight" },
-    { id: 4, name: "Future Tech", value: "FutureTech" }
+    { id: 4, name: "Innovative Careers", value: "InnovativeCareers" },
   ];
 
   function onClick(id, value) {

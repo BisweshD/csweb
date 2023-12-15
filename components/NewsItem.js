@@ -5,8 +5,7 @@ function NewsItem({ item }) {
   const websiteUrl = new URL(item.url).hostname;
 
   // Format the date and time
-  const date = new Date(item.publishedAt);
-  const formattedDate = `${date.toDateString()} at ${date.toLocaleTimeString()}`;
+  const formatDate = new Date(item.publishedAt).toLocaleString();
 
   return (
     <div className="article">
@@ -38,7 +37,7 @@ function NewsItem({ item }) {
 
         {/* Additional Info */}
         <div className="article-details">
-          <small><b>Published On: </b>{formattedDate}</small>
+          <small><b>Published On: </b>{formatDate}</small>
         </div>
       </div>
     </div>
